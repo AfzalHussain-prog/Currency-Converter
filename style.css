@@ -1,13 +1,78 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
-.container{
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
+    background-color: lightblue;
+}
+.container{
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 70vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    outline: none;
+    /* color: black; */
+}
+form input{
+    padding-left: 1rem;
+    border: 1px solid lightgray;
+    height: 3rem;
+    font-size: 1rem;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+.select-cont img{
+    max-width: 2rem;
+}
+.select-cont{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 6rem;
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+}
+.msg{
+    /* color: red; */
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+}
+button{
+    padding: 1rem 2rem;
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+    width: 80%;
+    text-align: center;
+    margin-left:3rem;
+    background-color: #af4d98;
+    color:white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.9;
 }
